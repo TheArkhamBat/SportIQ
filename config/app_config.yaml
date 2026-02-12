@@ -1,0 +1,31 @@
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: true
+  workers: 4
+
+logging:
+  level: "INFO"
+  file: "./logs/sportiq.log"
+  max_size: 10485760
+  backup_count: 5
+
+storage:
+  video_temp_dir: "./temp_videos"
+  results_dir: "./results"
+  models_dir: "./models"
+  max_file_size: 5368709120
+
+analysis:
+  real_time:
+    enabled: true
+    buffer_size: 60
+    processing_delay: 0.1
+  
+  batch:
+    enabled: true
+    chunk_size: 100
+  
+  export:
+    formats: ["json", "csv", "video"]
+    include_visualizations: true

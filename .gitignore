@@ -1,0 +1,16 @@
+# Virtual environment
+sportiq_env/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.vscode/
+.idea/
+*.log
+results/*.json
+data/raw/*.mp4
+data/raw/*.avi
+yolov8n.pt

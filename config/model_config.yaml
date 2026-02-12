@@ -1,0 +1,10 @@
+pose_estimation:
+  input_size: [256, 256]
+  num_keypoints: 17
+  backbone: 'yolov8'
+  pretrained: true
+
+biomechanics:
+  input_dim: 34
+  hidden_dims: [256, 128, 64]
+  output_dim: 6
